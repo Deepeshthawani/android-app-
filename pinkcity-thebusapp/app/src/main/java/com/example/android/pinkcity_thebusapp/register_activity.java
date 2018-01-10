@@ -4,7 +4,6 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
@@ -17,13 +16,12 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class register_activity extends AppCompatActivity implements View.OnClickListener {
+public class register_activity extends MainActivity {
 
     //defining view objects
     private EditText editTextEmail;
     private EditText editTextPassword;
     private Button buttonSignup;
-
     private TextView textViewSignin;
 
     private ProgressDialog progressDialog;
@@ -35,7 +33,7 @@ public class register_activity extends AppCompatActivity implements View.OnClick
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.register);
 
         //initializing firebase auth object
         firebaseAuth = FirebaseAuth.getInstance();
@@ -60,8 +58,26 @@ public class register_activity extends AppCompatActivity implements View.OnClick
         progressDialog = new ProgressDialog(this);
 
         //attaching listener to button
-        buttonSignup.setOnClickListener(this);
-        textViewSignin.setOnClickListener(this);
+        buttonSignup.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                if(v == buttonSignup){
+                    registerUser();
+                }
+
+            }
+        });
+        textViewSignin.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                if(v == textViewSignin){
+                    //open login activity when user taps on the already registered textview
+                    Intent i =(new Intent (register_activity.this, LoginActivity.class));
+                    startActivity(i);
+                }
+
+            }
+        });
     }
 
     private void registerUser(){
@@ -84,7 +100,7 @@ public class register_activity extends AppCompatActivity implements View.OnClick
         //if the email and password are not empty
         //displaying a progress dialog
 
-        progressDialog.setMessage("Logging in Please Wait...");
+        progressDialog.setMessage("Signing up Please Wait...");
         progressDialog.show();
 
         //creating a new user
@@ -106,18 +122,8 @@ public class register_activity extends AppCompatActivity implements View.OnClick
 
     }
 
-    @Override
-    public void onClick(View view) {
 
-        if(view == buttonSignup){
-            registerUser();
-        }
 
-        if(view == textViewSignin){
-            //open login activity when user taps on the already registered textview
-            startActivity(new Intent(this, LoginActivity.class));
-        }
 
-    }
 }
 

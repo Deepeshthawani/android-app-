@@ -45,4 +45,14 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+    public void onButtonClickRegister(View v)
+    {
+        if(v.getId()==R.id.home_button4)
+        {
+            Intent i = new Intent(MainActivity.this,register_activity.class);
+            startActivity(i);
+        }
+
+    }
 }
+
