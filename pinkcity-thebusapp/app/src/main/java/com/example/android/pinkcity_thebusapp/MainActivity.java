@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     {
         if(v.getId()==R.id.home_button3)
         {
-            Intent i = new Intent(MainActivity.this,display_login.class);
+            Intent i = new Intent(MainActivity.this,LoginActivity.class);
             startActivity(i);
         }
 

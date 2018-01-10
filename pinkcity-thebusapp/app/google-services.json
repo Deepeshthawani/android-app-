@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "532900540023",
+    "firebase_url": "https://pinkcity-the-bus-app.firebaseio.com",
+    "project_id": "pinkcity-the-bus-app",
+    "storage_bucket": "pinkcity-the-bus-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532900540023:android:7e90869a4580a0a5",
+        "android_client_info": {
+          "package_name": "com.example.android.pinkcity_thebusapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "532900540023-7j382kqrnjsgj4orlqthvgq7iinqu3fb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.pinkcity_thebusapp",
+            "certificate_hash": "dc7976b02f1fc43aed9d643d265f6d5446801a85"
+          }
+        },
+        {
+          "client_id": "532900540023-i7p7liekab9tq0a75lg3qpmvfhvh6l2h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYpYLhaRh1cukU1AtwQ9ISYK-6EwDghAw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "532900540023-i7p7liekab9tq0a75lg3qpmvfhvh6l2h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
