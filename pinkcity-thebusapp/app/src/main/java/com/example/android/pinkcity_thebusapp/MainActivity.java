@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     {
         if(v.getId()==R.id.home_button2)
         {
-            Intent i = new Intent(MainActivity.this,displaymap.class);
+            Intent i = new Intent(MainActivity.this,MapsActivity.class);
             startActivity(i);
         }
 
