@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -17,16 +16,14 @@
         tools:layout_editor_absoluteY="0dp"
         tools:layout_editor_absoluteX="0dp" />
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="  PINKCITY"
+        android:text=" PINKCITY"
         android:id="@+id/text1"
         android:textSize="36sp"
         android:fontFamily="serif"
-        android:textColor="#000000"
+        android:textColor="#ffffff"
         android:textStyle="bold"
         android:background="@color/colorAccent"
         />
@@ -36,7 +33,7 @@
             android:layout_toRightOf="@+id/text1"
             android:fontFamily="serif"
             android:textColor="#ffffff"
-            android:text="BUS APP"
+            android:text=" BUS APP"
             android:textSize="36sp"
             android:background="@color/colorAccent"/>
 
@@ -67,12 +64,27 @@
         android:text="LOGIN"
         android:background="@drawable/button_1"
         android:onClick="onButtonClickLogin"
-
         />
+
+    <Button
+        android:id="@+id/home_button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_above="@+id/imageView"
+        android:layout_alignLeft="@+id/home_button"
+        android:layout_alignStart="@+id/home_button"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/button_1"
+        android:text="Register"
+        android:onClick="onButtonClickRegister"/>
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/jaipur_bus_logo"
-        android:layout_alignParentBottom="true"/>
+        android:layout_alignParentBottom="true"
+        android:id="@+id/imageView" />
     </RelativeLayout>
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

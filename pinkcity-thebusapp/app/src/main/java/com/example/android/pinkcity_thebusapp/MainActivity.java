@@ -40,9 +40,19 @@ public class MainActivity extends AppCompatActivity {
     {
         if(v.getId()==R.id.home_button3)
         {
-            Intent i = new Intent(MainActivity.this,display_login.class);
+            Intent i = new Intent(MainActivity.this,LoginActivity.class);
+            startActivity(i);
+        }
+
+    }
+    public void onButtonClickRegister(View v)
+    {
+        if(v.getId()==R.id.home_button4)
+        {
+            Intent i = new Intent(MainActivity.this,register_activity.class);
             startActivity(i);
         }
 
     }
 }
+

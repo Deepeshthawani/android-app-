@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android.pinkcity_thebusapp">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -27,8 +28,9 @@
         <activity android:name=".displaymap"></activity>
         <activity android:name=".displaytime1"></activity>
         <activity android:name=".displayinfo"></activity>
-        <activity android:name=".display_login"></activity>
-        <activity android:name=".display_personal"></activity>
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".register_activity"></activity>
     </application>
 
 </manifest>
