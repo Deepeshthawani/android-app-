@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/main_background"
+        android:scaleType="fitXY"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/info"
+    android:text="Driver 1 Details (8:30 - 2:30) :"
+    android:padding="20dp"
+    android:textSize="18sp"
+    android:textColor="#4d4d4d"
+    android:textStyle="bold"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info2"
+        android:layout_below="@+id/info"
+        android:padding="20dp"
+        android:text="Driver Name :"
+        android:textSize="16sp"
+        android:textColor="#24007a"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info3"
+        android:layout_below="@+id/info"
+        android:layout_toRightOf="@+id/info2"
+        android:padding="20dp"
+        android:text="Ram Singh"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info4"
+        android:layout_below="@+id/info2"
+        android:padding="20dp"
+        android:text="ID no :"
+        android:textSize="16sp"
+        android:textColor="#24007a"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info5"
+        android:layout_below="@+id/info2"
+        android:layout_toRightOf="@id/info2"
+        android:padding="20dp"
+        android:text="7A23534"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info6"
+        android:layout_below="@+id/info4"
+        android:padding="20dp"
+        android:text="Rating :"
+        android:textSize="18sp"
+        android:textColor="#24007a"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/info2"
+        android:id="@+id/info7"
+        android:layout_below="@+id/info4"
+        android:padding="20dp"
+        android:text="3 / 5"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info8"
+        android:text="Driver 2 Details (2:30 - 8:30) :"
+        android:layout_below="@+id/info6"
+        android:padding="20dp"
+        android:textSize="18sp"
+        android:textColor="#4d4d4d"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info9"
+        android:layout_below="@+id/info8"
+        android:padding="20dp"
+        android:text="Driver Name :"
+        android:textSize="16sp"
+        android:textColor="#24007a"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info10"
+        android:layout_below="@+id/info8"
+        android:layout_toRightOf="@+id/info2"
+        android:padding="20dp"
+        android:text="Shyam Singh"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info11"
+        android:layout_below="@+id/info9"
+        android:padding="20dp"
+        android:text="ID no :"
+        android:textSize="16sp"
+        android:textColor="#24007a"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info12"
+        android:layout_below="@+id/info9"
+        android:layout_toRightOf="@id/info2"
+        android:padding="20dp"
+        android:text="9C45216"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info13"
+        android:layout_below="@+id/info11"
+        android:padding="20dp"
+        android:text="Rating :"
+        android:textSize="18sp"
+        android:textColor="#24007a"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info14"
+        android:layout_toRightOf="@+id/info9"
+        android:layout_below="@+id/info11"
+        android:padding="20dp"
+        android:text="4 / 5"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        />
+
+
+</RelativeLayout>

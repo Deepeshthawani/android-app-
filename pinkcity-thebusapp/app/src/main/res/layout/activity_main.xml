@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.pinkcity_thebusapp.MainActivity">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bus"
+        android:scaleType="fitXY"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  PINKCITY"
+        android:id="@+id/text1"
+        android:textSize="36sp"
+        android:fontFamily="serif"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:background="@color/colorAccent"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/text1"
+            android:fontFamily="serif"
+            android:textColor="#ffffff"
+            android:text="BUS APP"
+            android:textSize="36sp"
+            android:background="@color/colorAccent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_button"
+        android:text="continue"
+        android:layout_centerInParent="true"
+        android:onClick="onButtonClick"
+        android:background="@drawable/button_1"
+         />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_button2"
+        android:layout_below="@+id/home_button"
+        android:layout_centerVertical="true"
+        android:text="GO TO MAP"
+        android:onClick="onButtonClickMap"
+        android:background="@drawable/button_1"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_button3"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="LOGIN"
+        android:background="@drawable/button_1"
+        android:onClick="onButtonClickLogin"
+
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/jaipur_bus_logo"
+        android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

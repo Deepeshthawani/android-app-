@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/main_background"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/des1"
+        android:text="Description"
+        android:textSize="32sp"
+        android:textColor="#000000"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/des2"
+        android:layout_below="@+id/des1"
+        android:text="Starting point :"
+        android:textSize="18sp"
+        android:textColor="#24007a"
+        android:padding="20dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/des3"
+        android:layout_toRightOf="@id/des2"
+        android:layout_below="@id/des1"
+        android:padding="20sp"
+        android:text="Dwarkapuri"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/des4"
+        android:layout_below="@id/des2"
+        android:text="End point :"
+        android:textSize="18sp"
+        android:textColor="#24007a"
+        android:padding="20dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/des5"
+        android:layout_below="@id/des3"
+        android:layout_toRightOf="@id/des4"
+        android:padding="20dp"
+        android:text="Badi choupad"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/des6"
+        android:layout_below="@id/des4"
+        android:padding="20dp"
+        android:text="VIA :"
+        android:textSize="18sp"
+        android:textColor="#24007a"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/des7"
+        android:layout_toRightOf="@id/des6"
+        android:layout_below="@+id/des5"
+        android:padding="20dp"
+        android:text="Sanganer Police station , Durgapura , Tonk fatak , Rambagh , Ajmeri gate"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/des8"
+        android:layout_below="@+id/des7"
+        android:padding="10dp"
+        android:text="Frequency :"
+        android:textSize="18sp"
+        android:textColor="#24007a"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/des9"
+        android:layout_toRightOf="@+id/des8"
+        android:layout_below="@+id/des7"
+        android:padding="10dp"
+        android:text="6"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/but1"
+        android:layout_below="@+id/des8"
+        android:text="on google maps"
+        android:padding="20dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/but2"
+        android:layout_below="@+id/des8"
+        android:layout_alignParentRight="true"
+        android:text="Driver information"
+        android:padding="20dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/but3"
+        android:layout_below="@+id/but2"
+        android:text="Time chart and updates"
+        android:padding="20dp"
+        />
+
+
+</RelativeLayout>

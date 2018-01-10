@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/main_background"
+       android:scaleType="fitXY"
+       />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/personal1"
+        android:text="WELCOME to JCTSL "
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:padding="18sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/personal2"
+        android:layout_below="@+id/personal1"
+        android:padding="20dp"
+        android:text="Status of the bus :"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="16dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/personal3"
+        android:layout_below="@+id/personal2"
+        android:padding="10dp"
+        android:text="ROUTE"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:textColor="#000000"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/personal4"
+        android:layout_below="@+id/personal3"
+        android:padding="10dp"
+        android:text="1"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        />
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/personal5"
+         android:padding="10dp"
+         android:layout_toRightOf="@+id/personal2"
+         android:layout_below="@+id/personal2"
+         android:text="PRESENT STATUS"
+         android:textColor="#000000"
+         android:textStyle="bold"
+         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/personal6"
+        android:layout_below="@+id/personal5"
+        android:padding="10dp"
+        android:layout_toRightOf="@+id/personal2"
+        android:text="ON TIME"
+        android:textColor="#24007a"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/personal7"
+        android:layout_below="@+id/personal4"
+        android:padding="10dp"
+        android:text="1A"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/personal8"
+        android:layout_below="@+id/personal6"
+        android:padding="10dp"
+        android:layout_toRightOf="@+id/personal2"
+        android:text="ON TIME"
+        android:textColor="#24007a"
+     />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/personal9"
+        android:layout_below="@+id/personal7"
+        android:padding="10dp"
+        android:text="2"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/personal9"
+        android:layout_below="@+id/personal8"
+        android:padding="10dp"
+        android:layout_toRightOf="@+id/personal2"
+        android:text="ON  30 mins DELAY"
+        android:textColor="#24007a"
+        />
+
+
+
+
+
+
+</RelativeLayout>
